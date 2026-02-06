@@ -153,6 +153,13 @@ const App: React.FC = () => {
                    </div>
                  </div>
                  <div className="bg-slate-950/50 border border-slate-800/50 rounded-xl p-4 backdrop-blur-sm flex items-center gap-4 hover:border-green-500/30 transition-all duration-300">
+                   <MapPin size={20} className="text-green-400 flex-shrink-0" />
+                   <div>
+                     <p className="text-slate-400 text-xs uppercase tracking-wider mb-0.5 font-bold">Address</p>
+                     <p className="text-white font-bold text-sm">Da Nang City, Vietnam</p>
+                   </div>
+                 </div>
+                 <div className="bg-slate-950/50 border border-slate-800/50 rounded-xl p-4 backdrop-blur-sm flex items-center gap-4 hover:border-green-500/30 transition-all duration-300">
                    <Linkedin size={20} className="text-green-400 flex-shrink-0" />
                    <div>
                      <p className="text-slate-400 text-xs uppercase tracking-wider mb-0.5 font-bold">LinkedIn</p>
@@ -313,16 +320,18 @@ const App: React.FC = () => {
                     <p className="text-green-400 font-bold text-sm uppercase tracking-[0.2em] mb-2">{exp.role}</p>
                     
                     {idx === 0 && (
-                      <div className="mt-8 space-y-3">
-                        <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Featured Game Platforms:</p>
-                        <a href="https://bstories.beekids.edu.vn/" target="_blank" className="flex items-center justify-between group/link w-full px-5 py-4 bg-green-600/10 hover:bg-green-600 text-green-400 hover:text-white rounded-2xl border border-green-500/20 transition-all">
-                           <span className="font-bold">BStories Platform</span>
-                           <Globe size={18} />
-                        </a>
-                        <a href="https://bkids.edu.vn/" target="_blank" className="flex items-center justify-between group/link w-full px-5 py-4 bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white rounded-2xl border border-emerald-500/20 transition-all">
-                           <span className="font-bold">Beekids Education</span>
-                           <ExternalLink size={18} />
-                        </a>
+                      <div className="mt-8">
+                        <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-3">Featured Game Platforms:</p>
+                        <div className="grid grid-cols-2 gap-3">
+                          <a href="https://bstories.beekids.edu.vn/" target="_blank" className="flex items-center justify-between group/link px-4 py-3 bg-green-600/10 hover:bg-green-600 text-green-400 hover:text-white rounded-xl border border-green-500/20 transition-all hover:scale-105">
+                             <span className="font-bold text-sm">BStories</span>
+                             <Globe size={16} />
+                          </a>
+                          <a href="https://bkids.edu.vn/" target="_blank" className="flex items-center justify-between group/link px-4 py-3 bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white rounded-xl border border-emerald-500/20 transition-all hover:scale-105">
+                             <span className="font-bold text-sm">Beekids Edu</span>
+                             <ExternalLink size={16} />
+                          </a>
+                        </div>
                       </div>
                     )}
                   </div>

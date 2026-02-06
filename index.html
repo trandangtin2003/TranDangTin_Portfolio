@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <title>Trần Đăng Tín | Game Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +33,161 @@
         }
         ::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(180deg, #34d399, #10b981);
+        }
+        /* Custom scrollbar for project features */
+        .features-scroll::-webkit-scrollbar {
+            width: 5px;
+            transition: width 0.3s ease;
+        }
+        .features-scroll:hover::-webkit-scrollbar {
+            width: 10px;
+        }
+        .features-scroll::-webkit-scrollbar-track {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.3) 0%, rgba(30, 41, 59, 0.2) 50%, rgba(15, 23, 42, 0.3) 100%);
+            border-radius: 10px;
+            border: 1px solid rgba(71, 85, 105, 0.2);
+            transition: all 0.3s ease;
+        }
+        .features-scroll:hover::-webkit-scrollbar-track {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.6) 50%, rgba(15, 23, 42, 0.8) 100%);
+            border: 1px solid rgba(71, 85, 105, 0.5);
+        }
+        .features-scroll::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #a7f3d0 0%, #6ee7b7 35%, #34d399 65%, #22c55e 100%);
+            border-radius: 10px;
+            border: 3px solid rgba(167, 243, 208, 0.9);
+            box-shadow: 
+                0 0 20px rgba(110, 231, 183, 0.9),
+                0 0 35px rgba(52, 211, 153, 0.7),
+                0 0 50px rgba(34, 197, 94, 0.5),
+                inset 0 0 12px rgba(255, 255, 255, 0.6),
+                inset 0 2px 0 rgba(255, 255, 255, 0.8);
+            filter: brightness(2.2) saturate(1.7);
+            transition: all 0.3s ease;
+            animation: thumbGlowDefault 2s ease-in-out infinite;
+        }
+        @keyframes thumbGlowDefault {
+            0%, 100% {
+                box-shadow: 
+                    0 0 20px rgba(110, 231, 183, 0.9),
+                    0 0 35px rgba(52, 211, 153, 0.7),
+                    0 0 50px rgba(34, 197, 94, 0.5),
+                    inset 0 0 12px rgba(255, 255, 255, 0.6),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.8);
+                filter: brightness(2.2) saturate(1.7);
+            }
+            50% {
+                box-shadow: 
+                    0 0 35px rgba(167, 243, 208, 1),
+                    0 0 55px rgba(110, 231, 183, 0.9),
+                    0 0 75px rgba(52, 211, 153, 0.7),
+                    inset 0 0 18px rgba(255, 255, 255, 0.8),
+                    inset 0 2px 0 rgba(255, 255, 255, 1);
+                filter: brightness(2.6) saturate(1.9);
+                border-color: rgba(209, 250, 229, 1);
+            }
+        }
+        .features-scroll:hover::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #6ee7b7 0%, #34d399 35%, #22c55e 65%, #10b981 100%);
+            border: 3px solid rgba(167, 243, 208, 1);
+            animation: scrollbarGlow 1.5s ease-in-out infinite;
+            box-shadow: 
+                0 0 25px rgba(110, 231, 183, 1),
+                0 0 45px rgba(52, 211, 153, 1),
+                0 0 65px rgba(34, 197, 94, 0.9),
+                inset 0 0 15px rgba(255, 255, 255, 0.7);
+        }
+        @keyframes scrollbarGlow {
+            0%, 100% {
+                box-shadow: 
+                    0 0 25px rgba(110, 231, 183, 1),
+                    0 0 45px rgba(52, 211, 153, 1),
+                    0 0 65px rgba(34, 197, 94, 0.9),
+                    0 0 85px rgba(16, 185, 129, 0.6),
+                    inset 0 0 15px rgba(255, 255, 255, 0.7),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.9);
+                filter: brightness(2) saturate(1.6);
+                background: linear-gradient(180deg, #a7f3d0 0%, #6ee7b7 35%, #34d399 65%, #22c55e 100%);
+                border-color: rgba(209, 250, 229, 1);
+            }
+            50% {
+                box-shadow: 
+                    0 0 50px rgba(167, 243, 208, 1),
+                    0 0 80px rgba(110, 231, 183, 1),
+                    0 0 120px rgba(52, 211, 153, 1),
+                    0 0 150px rgba(34, 197, 94, 0.8),
+                    0 0 180px rgba(16, 185, 129, 0.5),
+                    inset 0 0 25px rgba(255, 255, 255, 1),
+                    inset 0 2px 0 rgba(255, 255, 255, 1);
+                filter: brightness(3) saturate(2);
+                background: linear-gradient(180deg, #d1fae5 0%, #a7f3d0 35%, #6ee7b7 65%, #34d399 100%);
+                border-color: rgba(236, 253, 245, 1);
+            }
+        }
+        .features-scroll:hover::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #d1fae5 0%, #a7f3d0 35%, #6ee7b7 65%, #34d399 100%);
+            animation: scrollbarGlowIntense 1s ease-in-out infinite;
+        }
+        @keyframes scrollbarGlowIntense {
+            0%, 100% {
+                box-shadow: 
+                    0 0 40px rgba(167, 243, 208, 1),
+                    0 0 70px rgba(110, 231, 183, 1),
+                    0 0 100px rgba(52, 211, 153, 1),
+                    0 0 130px rgba(34, 197, 94, 0.9),
+                    inset 0 0 20px rgba(255, 255, 255, 1),
+                    inset 0 2px 0 rgba(255, 255, 255, 1);
+                filter: brightness(2.5) saturate(1.8);
+            }
+            50% {
+                box-shadow: 
+                    0 0 70px rgba(236, 253, 245, 1),
+                    0 0 110px rgba(167, 243, 208, 1),
+                    0 0 150px rgba(110, 231, 183, 1),
+                    0 0 190px rgba(52, 211, 153, 1),
+                    0 0 220px rgba(34, 197, 94, 0.9),
+                    inset 0 0 30px rgba(255, 255, 255, 1),
+                    inset 0 3px 0 rgba(255, 255, 255, 1);
+                filter: brightness(3.5) saturate(2.2);
+                border-color: rgba(255, 255, 255, 0.9);
+            }
+        }
+        .features-scroll::-webkit-scrollbar-thumb:active {
+            background: linear-gradient(180deg, #ecfdf5 0%, #d1fae5 35%, #a7f3d0 65%, #6ee7b7 100%);
+            box-shadow: 
+                0 0 80px rgba(236, 253, 245, 1), 
+                0 0 120px rgba(167, 243, 208, 1),
+                0 0 160px rgba(110, 231, 183, 1),
+                0 0 200px rgba(52, 211, 153, 1),
+                inset 0 0 35px rgba(255, 255, 255, 1),
+                inset 0 4px 0 rgba(255, 255, 255, 1);
+            filter: brightness(4) saturate(2.5);
+            border: 4px solid rgba(255, 255, 255, 1);
+            animation: none;
+        }
+        @keyframes glow-pulse {
+            0%, 100% {
+                filter: drop-shadow(0 0 12px rgba(52, 211, 153, 0.8)) brightness(1.5);
+            }
+            50% {
+                filter: drop-shadow(0 0 30px rgba(110, 231, 183, 1)) drop-shadow(0 0 45px rgba(52, 211, 153, 0.9)) brightness(2.2);
+            }
+        }
+        .animate-glow-pulse {
+            animation: glow-pulse 1.5s ease-in-out infinite;
+        }
+        .glow-pulse {
+            animation: trackGlow 1.5s ease-in-out infinite;
+        }
+        @keyframes trackGlow {
+            0%, 100% {
+                opacity: 0.7;
+                filter: blur(5px);
+            }
+            50% {
+                opacity: 1;
+                filter: blur(8px);
+            }
         }
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
