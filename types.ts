@@ -12,6 +12,11 @@ export interface Project {
   date?: string;
 }
 
+export interface FreelanceEntry {
+  period: string;
+  company: string;
+}
+
 export interface Experience {
   company: string;
   role: string;
@@ -19,6 +24,8 @@ export interface Experience {
   description: string;
   project?: string;
   tasks: string[];
+  type?: string;
+  freelanceEntries?: FreelanceEntry[];
 }
 
 export interface SkillCategory {

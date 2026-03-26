@@ -312,29 +312,51 @@ const App: React.FC = () => {
             {EXPERIENCES.map((exp, idx) => (
               <div key={idx} className="group relative bg-gradient-to-br from-slate-950/90 via-slate-900/60 to-slate-950/80 border-2 border-slate-800/60 p-10 lg:p-14 rounded-[2.5rem] hover:border-green-500/30 transition-all duration-500 backdrop-blur-sm hover:shadow-[0_25px_70px_-15px_rgba(34,197,94,0.3)]">
                 <div className="flex flex-col lg:flex-row gap-10">
-                  <div className="lg:w-1/3">
-                    <span className="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-green-500/15 to-emerald-500/15 text-green-400 text-xs font-bold mb-5 border border-green-500/30 shadow-lg shadow-green-500/10">
-                      {exp.period}
-                    </span>
-                    <h3 className="heading-font text-3xl font-black text-white mb-3 leading-tight">{exp.company}</h3>
-                    <p className="text-green-400 font-bold text-sm uppercase tracking-[0.2em] mb-2">{exp.role}</p>
-                    
-                    {idx === 1 && (
-                      <div className="mt-8">
-                        <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-3">Featured Game Platforms:</p>
-                        <div className="grid grid-cols-2 gap-3">
-                          <a href="https://bstories.beekids.edu.vn/" target="_blank" className="flex items-center justify-between group/link px-4 py-3 bg-green-600/10 hover:bg-green-600 text-green-400 hover:text-white rounded-xl border border-green-500/20 transition-all hover:scale-105">
-                             <span className="font-bold text-sm">BStories</span>
-                             <Globe size={16} />
-                          </a>
-                          <a href="https://bkids.edu.vn/" target="_blank" className="flex items-center justify-between group/link px-4 py-3 bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white rounded-xl border border-emerald-500/20 transition-all hover:scale-105">
-                             <span className="font-bold text-sm">Beekids Edu</span>
-                             <ExternalLink size={16} />
-                          </a>
-                        </div>
+                  {exp.type === 'freelance' ? (
+                    <div className="lg:w-1/3 space-y-8">
+                      <div>
+                        <p className="heading-font text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-lime-400 uppercase leading-none tracking-tight">
+                          FREE<br />LANCER
+                        </p>
+                        <div className="h-[3px] w-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mt-3"></div>
                       </div>
-                    )}
-                  </div>
+                      <div className="space-y-5">
+                        {exp.freelanceEntries?.map((entry, i) => (
+                          <div key={i} className="relative pl-5 border-l-2 border-green-500/30">
+                            <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-green-500 shadow-[0_0_8px_#22c55e]"></div>
+                            <span className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-green-500/15 to-emerald-500/15 text-green-400 text-xs font-bold border border-green-500/30 mb-2">
+                              {entry.period}
+                            </span>
+                            <p className="text-white font-black text-xl leading-tight">{entry.company}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="lg:w-1/3">
+                      <span className="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-green-500/15 to-emerald-500/15 text-green-400 text-xs font-bold mb-5 border border-green-500/30 shadow-lg shadow-green-500/10">
+                        {exp.period}
+                      </span>
+                      <h3 className="heading-font text-3xl font-black text-white mb-3 leading-tight">{exp.company}</h3>
+                      <p className="text-green-400 font-bold text-sm uppercase tracking-[0.2em] mb-2">{exp.role}</p>
+
+                      {idx === 1 && (
+                        <div className="mt-8">
+                          <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-3">Featured Game Platforms:</p>
+                          <div className="grid grid-cols-2 gap-3">
+                            <a href="https://bstories.beekids.edu.vn/" target="_blank" className="flex items-center justify-between group/link px-4 py-3 bg-green-600/10 hover:bg-green-600 text-green-400 hover:text-white rounded-xl border border-green-500/20 transition-all hover:scale-105">
+                               <span className="font-bold text-sm">BStories</span>
+                               <Globe size={16} />
+                            </a>
+                            <a href="https://bkids.edu.vn/" target="_blank" className="flex items-center justify-between group/link px-4 py-3 bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white rounded-xl border border-emerald-500/20 transition-all hover:scale-105">
+                               <span className="font-bold text-sm">Beekids Edu</span>
+                               <ExternalLink size={16} />
+                            </a>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                   
                   <div className="lg:w-2/3 space-y-6">
                     <p className="text-slate-300 text-lg italic leading-relaxed">"{exp.description}"</p>

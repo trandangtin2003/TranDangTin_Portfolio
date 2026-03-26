@@ -1,5 +1,5 @@
 
-import { Project, Experience, SkillCategory } from './types';
+import { Project, Experience, SkillCategory, FreelanceEntry } from './types';
 
 export const PERSONAL_INFO = {
   name: "Trần Đăng Tín",
@@ -95,6 +95,10 @@ export const EXPERIENCES: Experience[] = [
     company: "Doubled Studio",
     role: "Freelancer",
     period: "March 2026 – Present",
+    type: "freelance",
+    freelanceEntries: [
+      { period: "March 2026 – Present", company: "Doubled Studio" }
+    ],
     project: "",
     description: "Collaborated with a cross-functional team to develop hybrid casual mobile games using Unity and C#.",
     tasks: [
