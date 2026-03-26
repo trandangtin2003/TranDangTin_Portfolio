@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   phone: "0384356037",
   address: "Da Nang City, Vietnam",
   mainVideo: "https://youtu.be/BYx4-ybK9c0",
-  objective: "As a passionate Fresher Game Developer, I aim to leverage my programming skills and creativity to contribute to high-quality Game development, delivering tangible value to the company. With a growth mindset, I set a goal to become a professional Game Developer within the next 2 years and advance to a Lead Developer role. I am committed to supporting the company’s sustainable growth through innovative coding solutions and a collaborative spirit."
+  objective: "As a passionate Unity Developer, I am eager to apply my programming skills and creativity to deliver high-quality games. With a strong growth mindset, I aim to advance rapidly while contributing innovative solutions and collaborative effort to support the company’s long-term success."
 };
 
 export const EDUCATION = {
@@ -92,9 +92,21 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Doubled Studio",
+    role: "Freelancer",
+    period: "March 2026 – Present",
+    project: "",
+    description: "Collaborated with a cross-functional team to develop hybrid casual mobile games using Unity and C#.",
+    tasks: [
+      "Implemented core gameplay systems including player locomotion, jump mechanics, platform interactions, and character switching.",
+      "Built enemy AI (line-of-sight, attack patterns), combat systems, and in-game economy for wave-based game modes.",
+      "Gained hands-on experience shipping production-ready Unity features under real project constraints and client feedback cycles."
+    ]
+  },
+  {
     company: "HIFIVEPLUS Technology Solutions Joint Stock Company",
     role: "Game Developer - Fresher",
-    period: "November 2025 - Present",
+    period: "November 2025 - March 2026",
     project: "Beekids Educational Game Platform",
     description: "Design and implement 2D educational minigames for Beekids platform using Cocos Creator (TypeScript/JavaScript).",
     tasks: [
@@ -102,16 +114,6 @@ export const EXPERIENCES: Experience[] = [
       "Update and upgrade existing minigames on https://bkids.edu.vn/ based on Education team requirements.",
       "Research and implement game version upgrades and optimization strategies.",
       "Conduct code reviews and provide technical support to team members."
-    ]
-  },
-  {
-    company: "TNT Media & Isocial Co., Ltd.",
-    role: "Game Developer - Fresher",
-    period: "June 2025 - September 2025",
-    description: "Integrated and assembled disparate game modules, assets, and scripts into complete, playable builds using Unity and Cocos Creator.",
-    tasks: [
-      "Analyzed and understood existing project codebases to connect UI, gameplay logic, audio, and level components into cohesive prototypes and final products.",
-      "Collaborated with team members to resolve integration issues, debug cross-engine compatibility problems, and ensure stable, functional game deliveries."
     ]
   },
   {
@@ -126,6 +128,7 @@ export const EXPERIENCES: Experience[] = [
 export const SKILLS: SkillCategory[] = [
   { title: "Game Engines", skills: ["Unity", "Unreal", "Cocos Creator", "Roblox Studio"] },
   { title: "Programming", skills: ["C#", "C++", "Lua", "Solidity", "TypeScript", "JavaScript", "Node.js"] },
+  { title: "Software Design", skills: ["OOP", "SOLID", "Design Patterns (Singleton, Observer)"] },
   { title: "Game Development", skills: ["2D/3D", "Cross-platform", "Scene Management", "Educational Games", "Casual Games", "UI System"] },
   { title: "Networking", skills: ["Photon PUN 2/Voice/Fusion", "Real-time Multiplayer"] },
   { title: "Mobile", skills: ["Android/iOS", "Google Play Publishing", "Performance Optimization"] },
