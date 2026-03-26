@@ -315,7 +315,7 @@ const App: React.FC = () => {
                   {exp.type === 'freelance' ? (
                     <div className="lg:w-1/3 space-y-8">
                       <div>
-                        <p className="heading-font text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-lime-400 uppercase leading-none tracking-tight">
+                        <p className="heading-font text-2xl lg:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-lime-400 uppercase leading-none tracking-tight">
                           FREE<br />LANCER
                         </p>
                         <div className="h-[3px] w-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mt-3"></div>
