@@ -109,7 +109,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     company: "HIFIVEPLUS Technology Solutions Joint Stock Company",
-    role: "Game Developer - Fresher",
+    role: "Game Developer",
     period: "November 2025 - March 2026",
     project: "Beekids Educational Game Platform",
     description: "Design and implement 2D educational minigames for Beekids platform using Cocos Creator (TypeScript/JavaScript).",
@@ -122,7 +122,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     company: "Startup Game Team",
-    role: "Game Developer - Intern",
+    role: "Game Developer",
     period: "January 2023 - June 2023",
     description: "Developed core puzzle mechanics, level features, and asset integration for a Unity-based puzzle game prototype in a startup environment, gaining hands-on experience with C#, Git, debugging, and agile workflows.",
     tasks: []
