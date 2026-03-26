@@ -319,7 +319,7 @@ const App: React.FC = () => {
                     <h3 className="heading-font text-3xl font-black text-white mb-3 leading-tight">{exp.company}</h3>
                     <p className="text-green-400 font-bold text-sm uppercase tracking-[0.2em] mb-2">{exp.role}</p>
                     
-                    {idx === 0 && (
+                    {idx === 1 && (
                       <div className="mt-8">
                         <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-3">Featured Game Platforms:</p>
                         <div className="grid grid-cols-2 gap-3">
