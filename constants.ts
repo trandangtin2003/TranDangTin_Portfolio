@@ -100,7 +100,7 @@ export const EXPERIENCES: Experience[] = [
       { period: "March 2026 – Present", company: "Doubled Studio" }
     ],
     project: "",
-    description: "Collaborated with a cross-functional team to develop hybrid casual mobile games using Unity and C#.",
+    description: "Collaborated with a cross-functional team to develop hybrid casual 3D mobile games using Unity and C#.",
     tasks: [
       "Implemented core gameplay systems including player locomotion, jump mechanics, platform interactions, and character switching.",
       "Built enemy AI (line-of-sight, attack patterns), combat systems, and in-game economy for wave-based game modes.",
@@ -142,5 +142,5 @@ export const SKILLS: SkillCategory[] = [
   { title: "AI", skills: ["NavMeshAgent", "State-based Systems", "Pathfinding"] },
   { title: "Monetization", skills: ["Google AdMob", "In-app Purchases"] },
   { title: "3D/Art", skills: ["Blender Modeling"] },
-  { title: "Tools", skills: ["Git", "Unity Addressables", "Async Loading", "Git Submodules", "Hot Update Pipeline"] }
+  { title: "Tools", skills: ["Git", "Sourcetree", "Unity Addressables", "Async Loading", "Git Submodules", "Hot Update Pipeline"] }
 ];
