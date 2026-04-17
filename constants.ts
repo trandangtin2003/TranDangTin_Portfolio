@@ -94,10 +94,10 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "Doubled Studio",
     role: "Freelancer",
-    period: "March 2026 – Present",
+    period: "March 2026 – April 2026",
     type: "freelance",
     freelanceEntries: [
-      { period: "March 2026 – Present", company: "Doubled Studio" }
+      { period: "March 2026 – April 2026", company: "Doubled Studio" }
     ],
     project: "",
     description: "Collaborated with a cross-functional team to develop hybrid casual 3D mobile games using Unity and C#.",
@@ -110,9 +110,9 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "HIFIVEPLUS Technology Solutions Joint Stock Company",
     role: "Game Developer",
-    period: "November 2025 - March 2026",
+    period: "November 2025 - Present",
     project: "Beekids Educational Game Platform",
-    description: "Design and implement 2D educational minigames for Beekids platform using Cocos Creator (TypeScript/JavaScript).",
+    description: "Design and implement 2D educational minigames for Beekids platform.",
     tasks: [
       "Develop, standalone minigames for https://bstories.beekids.edu.vn/ integrated with learning content.",
       "Update and upgrade existing minigames on https://bkids.edu.vn/ based on Education team requirements.",
