@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   phone: "0384356037",
   address: "Da Nang City, Vietnam",
   mainVideo: "https://youtu.be/BYx4-ybK9c0",
-  objective: "As a passionate Unity Developer, I am eager to apply my programming skills and creativity to deliver high-quality games. With a strong growth mindset, I aim to advance rapidly while contributing innovative solutions and collaborative effort to support the company’s long-term success."
+  objective: "As a passionate Game Developer, I am eager to apply my programming skills and creativity to deliver high-quality games. With a strong growth mindset, I aim to advance rapidly while contributing innovative solutions and collaborative effort to support the company’s long-term success."
 };
 
 export const EDUCATION = {
