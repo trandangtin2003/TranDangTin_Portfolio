@@ -110,7 +110,7 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "HIFIVEPLUS Technology Solutions Joint Stock Company",
     role: "Game Developer",
-    period: "November 2025 - Present",
+    period: "November 2025 - May 2026",
     project: "Beekids Educational Game Platform",
     description: "Design and implement 2D educational minigames for Beekids platform.",
     tasks: [
@@ -132,11 +132,11 @@ export const EXPERIENCES: Experience[] = [
 export const SKILLS: SkillCategory[] = [
   { title: "Game Engines", skills: ["Unity", "Unreal", "Cocos Creator", "Roblox Studio"] },
   { title: "Programming", skills: ["C#", "C++", "Lua", "Solidity", "TypeScript", "JavaScript", "Node.js"] },
-  { title: "Software Design", skills: ["OOP", "SOLID", "Design Patterns (Singleton, Observer)"] },
+  { title: "Software Design", skills: ["OOP", "SOLID", "Design Patterns (Singleton, Observer)", "ECS (Entity Component System)"] },
   { title: "Game Development", skills: ["2D/3D", "Cross-platform", "Scene Management", "Educational Games", "Casual Games", "UI System"] },
   { title: "Networking", skills: ["Photon PUN 2/Voice/Fusion", "Real-time Multiplayer"] },
   { title: "Mobile", skills: ["Android/iOS", "Google Play Publishing", "Performance Optimization"] },
-  { title: "Performance", skills: ["Object Pooling", "LOD", "Occlusion Culling", "Memory Management"] },
+  { title: "Performance", skills: ["Object Pooling", "LOD", "Occlusion Culling", "Memory Management", "ECS (Entity Component System)", "Job System (IJob, IJobParallelFor)", "Burst Compiler", "Unity.Mathematics", "Unity.Collections"] },
   { title: "Web3/Blockchain", skills: ["Smart Contracts", "MetaMask", "Hardhat", "Web3.js"] },
   { title: "Backend", skills: ["Firebase", "AES Encryption", "RESTful APIs", "Data Synchronization"] },
   { title: "AI", skills: ["NavMeshAgent", "State-based Systems", "Pathfinding"] },
